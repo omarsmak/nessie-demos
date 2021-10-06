@@ -33,7 +33,7 @@ SHORT_SHA=$(echo "${GITHUB_SHA}" | cut -c1-12)
 DOCKER_FULL_IMAGE_NAME="${INPUT_IMAGE_NAME}:${SHORT_SHA}"
 
 # Build and push docker image
-jupyter-repo2docker --image-name ${DOCKER_FULL_IMAGE_NAME} --no-run --push --user-id 1000 --user-name ${NB_USER} ${INPUT_REPO_DIR}
+#jupyter-repo2docker --image-name ${DOCKER_FULL_IMAGE_NAME} --no-run --push --user-id 1000 --user-name ${NB_USER} ${INPUT_REPO_DIR}
 
 # Set the output docker tag we have from here
 echo "::set-output name=image_tag::${SHORT_SHA}"

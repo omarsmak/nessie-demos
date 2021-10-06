@@ -74,7 +74,7 @@ jobs:
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
       with:
-        branch: update-image-tag-bot
+        branch: buildbot/update-image-tag-bot
         delete-branch: true
         title: 'Update Binder Dockerfile image tag'
 
