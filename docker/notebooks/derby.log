@@ -1,0 +1,18 @@
+----------------------------------------------------------------
+Mon Oct 04 15:14:43 CEST 2021:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-017c-4b71-387a-000000e60f90 
+on database directory /Users/omaral-safi/Code/nessie-demos/notebooks/metastore_db with class loader sun.misc.Launcher$AppClassLoader@c4e7926d 
+Loaded from file:/Users/omaral-safi/Code/nessie-demos/notebooks/apache-hive-2.3.9-bin/lib/derby-10.10.2.0.jar
+java.vendor=AdoptOpenJDK
+java.runtime.version=1.8.0_292-b10
+java.fullversion=1.8.0_292-b10
+JRE 1.8.0 Mac OS X amd64-64-Bit Compressed References 20210421_909 (JIT enabled, AOT enabled)
+OpenJ9   - b4cc246d9
+OMR      - 162e6f729
+JCL      - 2a5e268814 based on jdk8u292-b10
+user.dir=/Users/omaral-safi/Code/nessie-demos/notebooks
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.16
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
