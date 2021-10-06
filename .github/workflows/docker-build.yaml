@@ -17,6 +17,8 @@
 name: Building Binder Docker Image
 
 on:
+  push:
+    branches: [ docker-speed-3 ]  
   pull_request:
     types: [opened, synchronize, reopened]
     paths:
@@ -69,3 +71,10 @@ jobs:
       run: |
         chmod +x "${GITHUB_WORKSPACE}/.github/scripts/trigger_binder.sh" 
         ${GITHUB_WORKSPACE}/.github/scripts/trigger_binder.sh "https://gke.mybinder.org/build/gh/$GITHUB_REPOSITORY/${GITHUB_REF#refs/heads/}"
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3
+      with:
+        branch: update-image-tag-bot
+        delete-branch: true
+        title: 'Update Binder Dockerfile image tag'
+
