@@ -26,7 +26,7 @@ if [ -z "$INPUT_NOTEBOOK_USER" ];
         NB_USER="${INPUT_NOTEBOOK_USER}"
 fi
 
-# Get GH commet SHA
+# Get GH commit SHA
 SHORT_SHA=$(echo "${GITHUB_SHA}" | cut -c1-12)
 
 # Set Docker image full name
