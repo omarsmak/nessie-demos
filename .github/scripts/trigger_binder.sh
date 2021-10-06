@@ -22,7 +22,7 @@ function trigger_binder() {
 
 function main() {
     # 1: the Binder build API URL to curl
-    #trigger_binder $1
+    trigger_binder $1
 }
 
 main "$@" || exit 1
